@@ -1,1 +1,1 @@
-java -jar .\target\YAU-1.0-SNAPSHOT.jar
+java -jar .\target\YAU-0.0.1-SNAPSHOT.jar
