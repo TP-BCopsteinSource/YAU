@@ -1,5 +1,9 @@
 package test.java.com.bcopstein;
 
+import main.java.com.bcopstein.Ponto;
+import main.java.com.bcopstein.Area;
+
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -20,8 +24,8 @@ public class AreaTest{
 
     @DisplayName("Testa a rotina de classificação de pontos contra area")
     @ParameterizedTest
-    @CsvSource({ "90,50,0","90,90,1","90,5,2","120,50,4","30,50,8",
-                 "120,90,5","120,5,6","30,90,9","30,5,10" })
+    @CsvSource({ "90,50,0","90,90,1","90,5,2","160,50,4","30,50,8",
+                 "160,90,5","160,5,6","30,90,9","30,5,10" })
     public void evaluateTest(int x,int y,byte rEsp) {
         byte observed = area.codificaPonto(new Ponto(x,y));
         assertEquals(rEsp,observed);
