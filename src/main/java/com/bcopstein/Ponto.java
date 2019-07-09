@@ -1,4 +1,4 @@
-package com.bcopstein;
+package main.java.com.bcopstein;
 
 public class Ponto {
     private int x;
