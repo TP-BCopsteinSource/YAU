@@ -15,7 +15,7 @@ public class Area extends Reta {
         }
     }
 
-    private byte codificaPonto(Ponto p) {
+    public byte codificaPonto(Ponto p) {
         byte cod = 0;
         if (p.getY() > getP1().getY()) { // Ponto acima da area
             cod = (byte)1;
