@@ -4,10 +4,6 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Area extends Reta {
-    public enum SituacaoReta {
-        TODA_DENTRO, TODA_FORA, INTERSECTA
-    }
-
     public Area(Ponto pSupEsq, Ponto pInfDir) {
         super(pSupEsq, pInfDir);
         if ((pSupEsq.getX() >= pInfDir.getX()) || (pSupEsq.getY() <= pInfDir.getY())) {
@@ -35,6 +31,7 @@ public class Area extends Reta {
         byte cod1 = codificaPonto(reta.getP1());
         byte cod2 = codificaPonto(reta.getP2());
 
+        /*
         System.out.println("Codigo P1: "+cod1);
         System.out.println("Codigo P2: "+cod2);
         System.out.println("Cod1 | Cod2: "+(cod1|cod2));
@@ -42,6 +39,7 @@ public class Area extends Reta {
         System.out.println("Cod1 & 2: "+(cod1&2));
         System.out.println("Cod1 & 4: "+(cod1&4));
         System.out.println("Cod1 & 8: "+(cod1&8));
+        */
 
         if ((cod1 | cod2) == 0){
             return SituacaoReta.TODA_DENTRO;

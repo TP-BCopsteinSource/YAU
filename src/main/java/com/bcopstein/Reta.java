@@ -1,6 +1,10 @@
 package main.java.com.bcopstein;
 
 public class Reta {
+    public enum SituacaoReta {
+        TODA_DENTRO, TODA_FORA, INTERSECTA
+    }
+
     private Ponto p1,p2;
 
     public Reta(Ponto p1,Ponto p2){
